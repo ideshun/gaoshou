@@ -1,0 +1,31 @@
+<!--pages/activity_Initiate/activity_Initiate.wxml-->
+<view>
+<!-- 轮播 -->
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    </view>
+<view class="page__modules">
+  <input class="activityName" placeholder="请输入活动名称"></input>
+  <view class="activityType">
+    <picker bindchange="bindAccountChange" value="{{activityTypeIndex}}" range="{{activityType}}">
+      <view class="weui-select" style="background-image: url({{img}}Triangle.png);background-size:36rpx 28rpx;background-position:right center;background-repeat:no-repeat;">{{activityType[activityTypeIndex]}}</view>
+    </picker>
+  </view>
+</view>
+<view class="page__modules">
+  <textarea>
+  </textarea>
+</view>
+<view style="overflow:hidden;margin-bottom:100rpx;">
+  <navigator url="" class="uploadRuler">
+    了解上传规则？
+  </navigator>
+</view>
+<view class="weui-btn-area">
+  <button class="weui-btn" type="warn" bindtap="showTopTips">确定发起</button>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/pastEvents/pastEvents",
+    "pages/activity_Initiate/activity_Initiate",
+    "pages/activity/activity"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dc4e40",
+    "navigationBarTitleText": "高手网",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar_1.png",
+        "selectedIconPath": "images/tabBar_1h.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "发布作品",
+        "iconPath": "images/tabBar_2.png",
+        "selectedIconPath": "images/tabBar_2h.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "我的",
+        "iconPath": "images/tabBar_4.png",
+        "selectedIconPath": "images/tabBar_4h.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "发布活动",
+        "iconPath": "images/tabBar_3.png",
+        "selectedIconPath": "images/tabBar_3h.png"
+      }
+    ]
+  }
+}
