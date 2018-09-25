@@ -4,7 +4,9 @@
     "pages/list/list",
     "pages/pastEvents/pastEvents",
     "pages/activity_Initiate/activity_Initiate",
-    "pages/activity/activity"
+    "pages/activity/activity",
+    "pages/publication/Publication",
+    "pages/participate/participate"
   ],
   "window": {
     "backgroundTextStyle": "light",

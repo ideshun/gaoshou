@@ -8,7 +8,6 @@ Page({
     img:config.img,
     //swiper
     imgUrls: [
-      '/images/banner.png',
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
@@ -27,6 +26,8 @@ Page({
     // 日期插件
     date: "2016-09-01",
     time: "12:01",
+    edate: "2016-09-01",
+    etime: "12:01",
   },
   bindAccountChange: function (e) {
     console.log('picker account 发生选择改变，携带值为', e.detail.value);
@@ -66,6 +67,16 @@ Page({
   bindTimeChange: function (e) {
     this.setData({
       time: e.detail.value
+    })
+  },
+  bindeDateChange: function (e) {
+    this.setData({
+      edate: e.detail.value
+    })
+  },
+  bindeTimeChange: function (e) {
+    this.setData({
+      etime: e.detail.value
     })
   },
   /**

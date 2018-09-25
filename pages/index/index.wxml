@@ -87,24 +87,28 @@
     </view>
     <view class="page__modules">
       <view class="cate_icon4">
-      <navigator url="/pages/activity_Initiate/activity_Initiate">
-        <image src="{{img}}cate4_3.png" mode="scaleToFill"></image>
-        <view class="cate_text">
-          <view class="cate_text_tit">发起活动</view>
-        </view>
+        <navigator url="/pages/activity_Initiate/activity_Initiate">
+          <image src="{{img}}cate4_3.png" mode="scaleToFill"></image>
+          <view class="cate_text">
+            <view class="cate_text_tit">发起活动</view>
+          </view>
         </navigator>
       </view>
       <view class="cate_icon4">
-        <image src="{{img}}cate4_4.png" mode="scaleToFill"></image>
-        <view class="cate_text">
-          <view class="cate_text_tit">参与活动</view>
-        </view>
+        <navigator url="/pages/participate/participate">
+          <image src="{{img}}cate4_4.png" mode="scaleToFill"></image>
+          <view class="cate_text">
+            <view class="cate_text_tit">参与活动</view>
+          </view>
+        </navigator>
       </view>
       <view class="cate_icon4">
-        <image src="{{img}}cate4_1.png" mode="scaleToFill"></image>
-        <view class="cate_text">
-          <view class="cate_text_tit">发布作品</view>
-        </view>
+        <navigator url="/pages/publication/Publication">
+          <image src="{{img}}cate4_1.png" mode="scaleToFill"></image>
+          <view class="cate_text">
+            <view class="cate_text_tit">发布作品</view>
+          </view>
+        </navigator>
       </view>
       <view class="cate_icon4">
         <navigator url="pages/activity_Initiate/activity_Initiate" hover-class="navigator-hover">
@@ -133,11 +137,11 @@
         </view>
       </view>
       <view class="cate_icon4">
-      <navigator url="/pages/pastEvents/pastEvents">
-        <image src="{{img}}cate4_8.png" mode="scaleToFill"></image>
-        <view class="cate_text">
-          <view class="cate_text_tit">冠军列表</view>
-        </view>
+        <navigator url="/pages/pastEvents/pastEvents">
+          <image src="{{img}}cate4_8.png" mode="scaleToFill"></image>
+          <view class="cate_text">
+            <view class="cate_text_tit">冠军列表</view>
+          </view>
         </navigator>
       </view>
     </view>
@@ -148,7 +152,9 @@
       <view class="eventsItem" wx:for="{{eventsList}}" wx:key="*this">
         <navigator url="{{item.url}}">
           <image src="{{item.image}}"></image>
-          <view class="listInfo">{{item.title}} <text class="fr">赞{{item.like}} 评{{item.comment}} 阅读{{item.look}}</text></view>
+          <view class="listInfo">{{item.title}}
+            <text class="fr">赞{{item.like}} 评{{item.comment}} 阅读{{item.look}}</text>
+          </view>
         </navigator>
       </view>
     </view>
@@ -159,7 +165,9 @@
       <view class="worksItem" wx:for="{{worksList}}" wx:key="*this">
         <navigator url="{{item.url}}">
           <image src="{{item.image}}"></image>
-          <view class="listInfo">{{item.title}} <text class="fr">赞{{item.like}} 评{{item.comment}} 阅读{{item.look}}</text></view>
+          <view class="listInfo">{{item.title}}
+            <text class="fr">赞{{item.like}} 评{{item.comment}} 阅读{{item.look}}</text>
+          </view>
         </navigator>
       </view>
     </view>
