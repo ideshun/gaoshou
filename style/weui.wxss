@@ -11,7 +11,7 @@ page {
 icon {
     vertical-align: middle
 }
-
+    
 .weui-cells {
     position: relative;
     margin-top: 1.17647059em;
