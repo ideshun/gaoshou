@@ -2,6 +2,9 @@
 .page__modules{
   padding: 20rpx 10rpx;
 }
+.weui-cells{
+  margin: 0;
+}
 .activityName{
   text-align: center;
 }

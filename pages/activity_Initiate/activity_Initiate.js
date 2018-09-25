@@ -8,7 +8,7 @@ Page({
     img:config.img,
     //swiper
     imgUrls: [
-      config.img +'banner.png',
+      '/images/banner.png',
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
@@ -22,14 +22,50 @@ Page({
     //活动分类
     activityType: ["活动类别","比赛", "排名", "互助"],
     activityTypeIndex: 0,
+    //图片上传
+    files: [],
+    // 日期插件
+    date: "2016-09-01",
+    time: "12:01",
   },
   bindAccountChange: function (e) {
     console.log('picker account 发生选择改变，携带值为', e.detail.value);
     if (e.detail.value<1){
-      
+
     }
     this.setData({
       activityTypeIndex: e.detail.value
+    })
+  },
+  // 图片上传
+  chooseImage: function (e) {
+    var that = this;
+    wx.chooseImage({
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        that.setData({
+          files: that.data.files.concat(res.tempFilePaths)
+        });
+      }
+    })
+  },
+  previewImage: function (e) {
+    wx.previewImage({
+      current: e.currentTarget.id, // 当前显示图片的http链接
+      urls: this.data.files // 需要预览的图片http链接列表
+    })
+  },
+  // 改变时间
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
     })
   },
   /**
