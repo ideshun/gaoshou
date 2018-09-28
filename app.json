@@ -1,16 +1,16 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/my/my",
     "pages/foot/foot",
     "pages/exhibit/exhibit",
     "pages/launch/launch",
-      "pages/index/index",
-      "pages/list/list",
-      "pages/pastEvents/pastEvents",
-      "pages/activity_Initiate/activity_Initiate",
-      "pages/activity/activity",
-      "pages/publication/Publication",
-      "pages/participate/participate"
+    "pages/list/list",
+    "pages/pastEvents/pastEvents",
+    "pages/activity_Initiate/activity_Initiate",
+    "pages/activity/activity",
+    "pages/publication/Publication",
+    "pages/participate/participate"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,7 +33,7 @@
         "selectedIconPath": "images/tabBar_2h.png"
       },
       {
-        "pagePath": "pages/list/list",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "images/tabBar_4.png",
         "selectedIconPath": "images/tabBar_4h.png"
