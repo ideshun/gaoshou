@@ -119,10 +119,12 @@
         </navigator>
       </view>
       <view class="cate_icon4">
+      <navigator url="/pages/exhibit/exhibit" hover-class="navigator-hover">
         <image src="{{img}}cate4_5.png" mode="scaleToFill"></image>
         <view class="cate_text">
           <view class="cate_text_tit">活动列表</view>
         </view>
+        </navigator>
       </view>
       <view class="cate_icon4">
         <image src="{{img}}cate4_6.png" mode="scaleToFill"></image>
@@ -137,7 +139,7 @@
         </view>
       </view>
       <view class="cate_icon4">
-        <navigator url="/pages/pastEvents/pastEvents">
+        <navigator url="/">
           <image src="{{img}}cate4_8.png" mode="scaleToFill"></image>
           <view class="cate_text">
             <view class="cate_text_tit">冠军列表</view>

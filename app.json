@@ -27,8 +27,8 @@
         "selectedIconPath": "images/tabBar_1h.png"
       },
       {
-        "pagePath": "pages/activity/activity",
-        "text": "发布作品",
+        "pagePath": "pages/pastEvents/pastEvents",
+        "text": "冠军列表",
         "iconPath": "images/tabBar_2.png",
         "selectedIconPath": "images/tabBar_2h.png"
       },
@@ -37,12 +37,6 @@
         "text": "我的",
         "iconPath": "images/tabBar_4.png",
         "selectedIconPath": "images/tabBar_4h.png"
-      },
-      {
-        "pagePath": "pages/list/list",
-        "text": "发布活动",
-        "iconPath": "images/tabBar_3.png",
-        "selectedIconPath": "images/tabBar_3h.png"
       }
     ]
   }
